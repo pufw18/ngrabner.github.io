@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html>
+{% include head.html %}
+<!-- Flexbox container -->
+  <body>
+    <div class="{{layout.header-type}}">
+    {% include header.html %}
+    </div>
+
+    <div class="content-container">
+    {{ content}}
+    </div>
+
+    {% include footer.html %}
+  </body>
+</html>

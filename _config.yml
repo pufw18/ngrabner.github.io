@@ -1,0 +1,9 @@
+collections:
+  projects:
+    output: true
+    title: Projects
+    permalink: /projects/:title/
+  travels:
+    output: true
+    title: Travels
+    permalink: /travel/:title/

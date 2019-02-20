@@ -1,0 +1,17 @@
+<head>
+  {% if page.title %}
+    <title>{{ page.title }} | Nate Grabner</title>
+  {% else %}
+    <title>Nate Grabner</title>
+  {% endif %}
+  {% if page.description %}
+  <meta name="description" content={{ page.description }}>
+  {% else %}
+  <meta name="description" content="This is Nate Grabner's personal site">
+  {% endif %}
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="/fonts/fontawesome/css/all.css">
+  <link rel="stylesheet" href="/css/reset.css">
+  <link rel="stylesheet" href="/css/main.css">
+  </head>

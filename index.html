@@ -1,0 +1,96 @@
+---
+layout: default
+---
+
+<div class="home">
+  <div class="full-hero hero-home">
+    <div class="hero-content">
+      <div class="home-callout">
+      <h3>Hey, I'm</h3>
+      <h1>Nate Grabner</h1>
+      </div>
+    </div>
+  </div>
+
+  <div class="intro-home home-section">
+    <p>Hi, I'm Nate - a Chicago-based, Indiana born Customer
+      Experience Consultant with a passion for learning and great Thai food</p>
+  </div>
+
+<!-- The section for project overviews -->
+  <div class="resume-home home-section">
+    <div class="resume-home-content">
+    <h2 class="home-subheader">Here's what I've worked on</h2>
+    <h4 class="home-subheader-description">
+      Whether it's in work, school, or any other organization, I'm a firm proponent
+      of keeping an entrepeneurial mindset and never holding back on the elbow
+      grease. Here's a few of the projects I've worked on the past few years.
+    </h4>
+    <!-- The flex list of all the projects -->
+    <div class="projects-list-home">
+      {% assign sorted_projects = site.projects | sort:"order" %}
+      {% for project in sorted_projects %}
+      <div class="col-two projects-home">
+        <div class="col col-thumb project-thumbs">
+          <a href="{{ project.url }}"><img src="{{project.thumbnail}}" alt="{{project.title}}"></a>
+        </div>
+        <div class="col col-desciption project-description">
+          <a href="{{ project.url }}"><h1>{{ project.title }}</h1></a>
+          <h2>{{ project.position }}</h2>
+          <h3>{{ project.location }}</h3>
+          <p>{{ project.excerpt}}</p>
+        </div>
+      </div>
+      {% endfor %}
+    </div>
+    </div>
+</div>
+
+
+  <div class="skills-home home-section skills-awards">
+    <h1>Skills</h1>
+    <ul>
+      <li>HTML/CSS</li>
+      <li>Excel/VBA</li>
+      <li>Salesforce - Admin Certified</li>
+      <li>Adobe Creative Suite</li>
+    </ul>
+  </div>
+  <div class="awards-home home-section skills-awards">
+    <h1>Awards</h1>
+    <ul>
+      <li>Eagle Scout</li>
+      <li>Purdue Presidential Scholar</li>
+      <li>Purdue President's Council Scholar</li>
+      <a href="https://miraclenetworkdancemarathon.childrensmiraclenetworkhospitals.org/purdue-university-senior-receives-2018-miracle-network-dance-marathon-distinguished-leadership-award/">
+      <li>CMN Hospitals Dance Marathon Distinguished Leader</li></a>
+      <a href="https://waynedalenews.com/2014/05/grabner-selected-as-an-indiana-academic-all-star/">
+      <li>Indiana Academic All Star</li></a>
+      <a href="https://pikapp.org/student-experience/awards-and-scholarships/the-ad-astra-society/">
+        <li>Pi Kappa Phi Ad Astra Society</li></a>
+    </ul>
+  </div>
+
+
+<!--The thumbnail gallery for Travel-->
+  <div class="travel-home home-section">
+    <h2 class="home-subheader">Here's where I've been so far</h2>
+    <h4 class="home-subheader-description">
+      Although I'm a fan of getting lost down the rabbit holes of Wikipedia and
+      Netflix documentaries, sometimes It's nice to get out and see the world
+       in person. Check out the places I've been below.
+    </h4>
+
+    <div class="image-checkerboard travel-grid">
+
+      {% for travel in site.travels %}
+    <div class="cell travel-grid-image">
+      <img src="{{travel.thumbnail}}" alt="{{travel.title}}" class="responsive-image">
+      <h1>{{travel.title}}</h1>
+    </div>
+      {% endfor %}
+
+    </div>
+  </div>
+
+</div>
