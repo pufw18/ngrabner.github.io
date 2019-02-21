@@ -46,7 +46,9 @@ header-type: header-dark
 
       {% if image.path contains page.gallery %}
         <div class="cell project-grid-image">
+          <a href="{{image.path}}" data-fancybox="{{page.title}}">
           <img src="{{ site.baseurl }} {{image.path}}" alt="{{image.name}}">
+          </a>
         </div>
       {% endif %}
 

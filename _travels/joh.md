@@ -3,7 +3,7 @@ layout: gallery
 thumbnail: /images/travels/joh/basketball.jpg
 title: Journey of Hope
 projectHero:
-gallery: /travels/cancun
+gallery: /projects/JOH
 long-date: Summer 2016
 ---
 

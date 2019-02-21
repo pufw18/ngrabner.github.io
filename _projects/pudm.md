@@ -5,7 +5,7 @@ title: Purdue University Dance Marathon (PUDM)
 position: VP of External Relations 2018 <br/>Greek Outreach Executive 2017
 location: West Lafayette, IN
 order: 2
-projectHero: /images/PUDM/fscl-reveal.jpg
+projectHero: /images/projects/PUDM/fscl-reveal.jpg
 gallery: /projects/PUDM
 
 ---

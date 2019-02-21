@@ -5,7 +5,7 @@ title: Journey of Hope
 position: Cyclist
 location: Southern US
 order: 6
-projectHero:
+projectHero: /images/projects/JOH/me-with-flag.jpg
 gallery: /projects/JOH
 ---
 

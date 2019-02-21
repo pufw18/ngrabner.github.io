@@ -1,6 +1,6 @@
 ---
 layout: project
-thumbnail: /images/block-p.jpg
+thumbnail: /images/projects/Ford/thumbnail.jpg
 title: Ford Motor Company
 position: Great Lakes Market Area Intern
 location: Chicago, IL
